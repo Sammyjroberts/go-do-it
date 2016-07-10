@@ -12,7 +12,7 @@ import (
 
 //Index hanler for index route. TODO send SPA via this route
 func Index(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Welcome!")
+	http.ServeFile(w, r, "static/index.html")
 }
 
 //TodoIndex handler responds with all todos
