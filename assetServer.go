@@ -13,6 +13,7 @@ func ServeStatic(router *mux.Router, staticDirectory string) {
 		"bower_components": staticDirectory + "/bower_components/",
 		"images":           staticDirectory + "/images/",
 		"scripts":          staticDirectory + "/scripts/",
+		"build":            staticDirectory + "/build/",
 	}
 	fmt.Println(staticPaths)
 
